@@ -9,8 +9,10 @@ const RssItem = ({post}) => {
   return (
     <div className={classes.post} onClick={seeMore}>
       <img className={classes.img} src={post.enclosure.thumbnail}/>
+      <img className={classes.img} src={post.enclosure.link}/>
       <div className={classes.content__part}>
         <strong className={classes.title}>{post.title}</strong>
+        <p className={classes.author}>{post.description}</p>
         <p className={classes.author}>{post.author}</p>
       </div>
       <div className={classes.time__stamp}><p className={classes.date}>{post.pubDate}</p></div>
