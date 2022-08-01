@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    margin-top: 95px;
+    padding-bottom:30px;
+}
+
+.title{
+    color: white;
+}
+
+@media (max-width: 503px){
+    .container{
+        margin-top: 120px;
+    }
+}
